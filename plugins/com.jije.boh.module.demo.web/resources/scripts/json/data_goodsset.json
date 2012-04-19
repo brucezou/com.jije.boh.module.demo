@@ -1,0 +1,15 @@
+{
+	"id": "G000007",
+	"name":"美味鸡块",
+	"sellstart":"6:00",
+	"sellend":"19:00",
+	"goodsstatus":"半成品",
+	"goodstype":"主食",
+	"usedate":"100分钟",
+	"madetime":"17分钟",
+	"saletype":"临时",
+	"startdate":"2012-2-16",
+	"enddate":"2012-12-16",
+	"initcount":"580",
+	"needtime":"90分钟"
+}

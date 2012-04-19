@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd                      
+       http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+
+	<osgi:reference id="messageServiceImpl"
+		interface="com.jije.boh.core.service.inter.IOperateMessageService" />
+
+	<osgi:service interface="com.jije.boh.core.service.inter.IOperateService"
+		ref="demoService">
+		<registration-listener ref="demoInitMenuService"
+			registration-method="serviceRegistered" unregistration-method="serviceUnregistered" />
+	</osgi:service>
+
+	<osgi:reference id="bascProductDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IBascProductDao" />
+
+	<osgi:reference id="mpcpMPCInitDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IMpcpMPCInitDao" />
+
+	<osgi:reference id="mpcpMPCProductDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IMpcpMPCProductDao" />
+
+	<osgi:reference id="fctpForecastDao"
+		interface="com.jije.boh.module.forecast.jpa.dao.IFctpForecastDao" />
+
+	<osgi:reference id="fctpTTCDao"
+		interface="com.jije.boh.module.forecast.jpa.dao.IFctpTTCDao" />
+
+	<osgi:reference id="bascDictionaryDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IBascDictionaryDao" />
+	<osgi:reference id="bascEmployeeDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IBascEmployeeDao" />
+
+	<osgi:reference id="bascStoreDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IBascStoreDao" />
+
+	<osgi:reference id="bascUserDao"
+		interface="com.jije.boh.module.demo.jpa.dao.IBascUserDao" />
+</beans>

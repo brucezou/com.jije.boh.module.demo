@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.jije.boh.module.demo.jpa.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.jije.boh.module.demo.jpa.test.Activator
+Bundle-Vendor: JIJE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,bin
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.junit;bundle-version="4.8.2"

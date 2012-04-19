@@ -1,0 +1,22 @@
+.p-table-produce{
+	width:600px;
+}
+.p-table-produce td{
+	line-height:40px;
+}
+#btn-submit{
+	margin-left:0px;
+	margin-top:10px;
+}
+.p-td-label{
+	width:100px;
+	color:#006699;
+}
+.p-table-produce select{
+	height:24px;
+	width:80px;
+}
+.p-txt-search input {
+    height: 24px;
+    width: 100%;
+}

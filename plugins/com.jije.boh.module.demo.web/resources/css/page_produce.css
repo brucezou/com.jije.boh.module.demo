@@ -1,0 +1,35 @@
+.p-produce-content{
+	width:99%;
+	margin: 10px auto 0;
+	min-width:1024px;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C0C0C0;
+	
+}
+.p-content-title{	
+	background:url(/moduleresources/core.web/resources/images/p-title-bg.png) 0 0 repeat-x;
+	height:32px;
+	line-height:32px;
+}
+
+.p-content-info{
+	background-color:#ffffff;
+	padding:20px;
+}
+
+input{
+	width:150px;
+	height:25px;
+}
+
+td.title{
+	padding-left:20px;
+	padding-bottom:10px;
+	color: #999933;
+}
+td{
+	padding-left:20px;
+	padding-bottom:10px;
+}
+
+

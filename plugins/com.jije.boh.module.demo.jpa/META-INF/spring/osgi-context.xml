@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd                      
+       http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<!-- import the DataSource from OSGi -->
+	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
+
+	<osgi:reference id="bascDictionaryRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDictionaryRepository" />
+
+	<osgi:reference id="bascEmployeeRepository"
+		interface="com.jije.boh.core.jpa.repository.BascEmployeeRepository" />
+
+	<osgi:reference id="bascStoreRepository"
+		interface="com.jije.boh.core.jpa.repository.BascStoreRepository" />
+
+	<osgi:reference id="bascUserRepository"
+		interface="com.jije.boh.core.jpa.repository.BascUserRepository" />
+
+	<osgi:service interface="com.jije.boh.module.demo.jpa.dao.IBascProductDao"
+		ref="bascProductDao" />
+
+	<osgi:service interface="com.jije.boh.module.demo.jpa.dao.IMpcpMPCInitDao"
+		ref="mpcpMPCInitDao" />
+
+	<osgi:service
+		interface="com.jije.boh.module.demo.jpa.dao.IMpcpMPCProductDao"
+		ref="mpcpMPCProductDao" />
+
+	<osgi:service interface="com.jije.boh.module.demo.jpa.dao.IBascEmployeeDao"
+		ref="bascEmployeeDao" />
+
+	<osgi:service interface="com.jije.boh.module.demo.jpa.dao.IBascStoreDao"
+		ref="bascStoreDao" />
+
+	<osgi:service interface="com.jije.boh.module.demo.jpa.dao.IBascUserDao"
+		ref="bascUserDao" />
+
+	<osgi:service
+		interface="com.jije.boh.module.demo.jpa.dao.IBascDictionaryDao"
+		ref="bascDictionaryDao" />
+
+</beans>
